@@ -1,0 +1,1 @@
+{"Get by id":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"426cbb98ad615e77","reportUrl":"https://JorgeLopez1709.github.io/specflow-report/4//#testresult/426cbb98ad615e77","status":"passed","time":{"start":1685403413827,"stop":1685403414520,"duration":693}}]}}
