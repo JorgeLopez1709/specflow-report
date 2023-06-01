@@ -17,7 +17,7 @@ namespace TestProject3
         [Given(@"I have an id with value (.*)")]
         public void GivenIHaveAnIdWithValue(int p0)
         {
-            request.AddUrlSegment("producid", p0);
+            request.AddUrlSegment("productid", p0);
         }
 
         [When(@"I send a get request")]
