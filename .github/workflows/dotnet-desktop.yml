@@ -20,7 +20,7 @@ jobs:
         run: dotnet restore
       - name: Build
         run: dotnet build --configuration Release --no-restore
-      - name: Test
+      - name: Execute Test Cases
         run: dotnet test --no-restore --verbosity normal
       - name: "Publish test results"
         uses: peaceiris/actions-gh-pages@v3.7.3
@@ -29,7 +29,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: './TestProject3/bin/Debug/net6.0/allure-results'
           keep_files: true
-          user_name: jorgelopez1709
+          user_name: JorgeLopez1709
           user_email: jorge.e.lopez.1709@gmail.com
           publish_branch: gh_page  
       - name: Test marketplace action
