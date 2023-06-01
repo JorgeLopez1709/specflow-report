@@ -8,16 +8,16 @@ namespace TestProject3
     [Binding]
     public class GetPostsStepDefinitions
     {
-        RestClient client = new RestClient("http://34.125.117.44:3000");
+        RestClient client = new RestClient("http://demostore.gatling.io/api/");
 
-        RestRequest request = new RestRequest("posts/{postid}", Method.Get);
+        RestRequest request = new RestRequest("product/{productid}", Method.Get);
 
         RestResponse response;
 
         [Given(@"I have an id with value (.*)")]
         public void GivenIHaveAnIdWithValue(int p0)
         {
-            request.AddUrlSegment("postid", p0);
+            request.AddUrlSegment("producid", p0);
         }
 
         [When(@"I send a get request")]
