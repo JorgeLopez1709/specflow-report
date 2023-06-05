@@ -1,4 +1,4 @@
-﻿Feature: Get posts
+﻿Feature: Get products
 
 A short summary of the feature
 
