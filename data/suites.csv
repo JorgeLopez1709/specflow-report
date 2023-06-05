@@ -1,2 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Jun 01 20:15:54 GMT 2023","Thu Jun 01 20:15:55 GMT 2023","649","","","","","","Get by id",""
+"passed","Mon Jun 05 04:47:15 GMT 2023","Mon Jun 05 04:47:15 GMT 2023","33","","","","","","Get Auth Token",""
+"passed","Mon Jun 05 04:47:14 GMT 2023","Mon Jun 05 04:47:15 GMT 2023","621","","","","","","Get by id",""
+"failed","Mon Jun 05 04:47:15 GMT 2023","Mon Jun 05 04:47:15 GMT 2023","113","","","","","","Put by id",""

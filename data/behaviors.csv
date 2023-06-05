@@ -1,2 +1,4 @@
 "Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
-"","Get posts","","0","0","1","0","0"
+"","GetToken","","0","0","1","0","0"
+"","Get products","","0","0","1","0","0"
+"","Put Products","","1","0","0","0","0"
