@@ -1,12 +1,22 @@
 ﻿Feature: Get products
 
-A short summary of the feature
+As a user
+I want to be able to retrieve product information
+So that I can perform operations related to them
 
-@positive @smoke @regression @integration @JIRA-7777 
-Scenario: Get by id 
-	Given I have an id with value 17
+
+@positive @smoke @regression @integration @JIRA-1001
+Scenario: Get products 
+	Given I have the valid products endpoint
 	When I send a get request
-	Then I expected a valid code response
+	Then I expect a valid Get Http code response
+
+@positive @smoke @regression @integration @JIRA-1002
+Scenario: Get products by id 
+	Given I have an id with a valid value
+	When I send a get request
+	Then I expect a valid Get Http code response
+
 
 
 

@@ -1,0 +1,79 @@
+{
+  "uuid": "b5d95c7193194f92b1cd7d9199a54000",
+  "historyId": "Get Forbidden Http response",
+  "fullName": "Get Forbidden Http response",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "JORDI-PC"
+    },
+    {
+      "name": "feature",
+      "value": "GetToken"
+    }
+  ],
+  "links": [],
+  "name": "Get Forbidden Http response",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I have an invalid username and password",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685993381117,
+      "stop": 1685993381118
+    },
+    {
+      "name": "When  I send a POST request",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685993381118,
+      "stop": 1685993381374
+    },
+    {
+      "name": "Then  I expect an forbiden error response",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685993381374,
+      "stop": 1685993381379
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1685993381117,
+  "stop": 1685993381380
+}

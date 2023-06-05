@@ -6,7 +6,7 @@ using System.Text.Json.Nodes;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.CommonModels;
 
-namespace TestProject3
+namespace TestProject3.StepDefinitions
 {
     [Binding]
     public class GetTokenStepDefinitions
@@ -30,7 +30,7 @@ namespace TestProject3
         public void WhenISendAPOSTRequest()
         {
             request.AddJsonBody(jsonBody);
-             response = client.Execute(request);
+            response = client.Execute(request);
         }
 
         [Then(@"I expect a valid token response")]
@@ -41,6 +41,24 @@ namespace TestProject3
             Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
             Assert.That(token, !Is.Empty, "Name inexsiten");
             Console.WriteLine(token);
+        }
+
+        [Given(@"I have an invalid username and password")]
+        public void GivenIHaveAnInvalidUsernameAndPassword()
+        {
+            jsonBody = @"{
+        ""username"": ""wrongAdmin"",
+        ""password"": ""admin""
+        }";
+
+        }
+
+        [Then(@"I expect an forbiden error response")]
+        public void ThenIExpectAForbiddenHttpResponse()
+        {
+            var jsonObject = JObject.Parse(response.Content);
+            Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.Forbidden));
+
         }
     }
 }

@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <SpecFlowObsoleteCodeBehindFiles Remove="features\GetPosts - Copia.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="features\PutProducts - Copia.feature.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,12 +30,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="features\PostCategories.feature.cs">
+      <DependentUpon>PostCategories.feature</DependentUpon>
+    </Compile>
     <Compile Update="features\PutProducts.feature.cs">
       <DependentUpon>PutProducts.feature</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <SpecFlowFeatureFiles Update="features\PostCategories.feature">
+      <Visible>$(UsingMicrosoftNETSdk)</Visible>
+      <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+    </SpecFlowFeatureFiles>
     <SpecFlowFeatureFiles Update="features\PutProducts.feature">
       <Visible>$(UsingMicrosoftNETSdk)</Visible>
       <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
