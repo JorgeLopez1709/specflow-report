@@ -1,0 +1,83 @@
+{
+  "uuid": "786c4397fc114878b06794b4861c6a1e",
+  "historyId": "Get Auth Token",
+  "fullName": "Get Auth Token",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "JORDI-PC"
+    },
+    {
+      "name": "feature",
+      "value": "GetToken"
+    },
+    {
+      "name": "tag",
+      "value": "tag1"
+    }
+  ],
+  "links": [],
+  "name": "Get Auth Token",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I have a valid username and password",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685995837940,
+      "stop": 1685995837941
+    },
+    {
+      "name": "When  I send a POST request",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685995837941,
+      "stop": 1685995838201
+    },
+    {
+      "name": "Then  I expect a valid token response",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685995838201,
+      "stop": 1685995838207
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1685995837940,
+  "stop": 1685995838208
+}

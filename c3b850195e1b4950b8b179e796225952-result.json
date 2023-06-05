@@ -1,0 +1,99 @@
+{
+  "uuid": "cfd460ea4c754a17803e96523d53817d",
+  "historyId": "Get products",
+  "fullName": "Get products",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "JORDI-PC"
+    },
+    {
+      "name": "feature",
+      "value": "Get products"
+    },
+    {
+      "name": "tag",
+      "value": "positive"
+    },
+    {
+      "name": "tag",
+      "value": "smoke"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "integration"
+    },
+    {
+      "name": "tag",
+      "value": "JIRA-3333"
+    }
+  ],
+  "links": [],
+  "name": "Get products",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I have the valid products endpoint",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685994520043,
+      "stop": 1685994520070
+    },
+    {
+      "name": "When  I send a get request",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685994520071,
+      "stop": 1685994520484
+    },
+    {
+      "name": "Then  I expect a valid Get Http code response",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685994520484,
+      "stop": 1685994520496
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1685994520034,
+  "stop": 1685994520498
+}

@@ -1,0 +1,114 @@
+{
+  "uuid": "8c2b3b04e17b41f88a61af7e03c8f5d0",
+  "historyId": "Create a new category",
+  "fullName": "Create a new category",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "fv-az163-465"
+    },
+    {
+      "name": "feature",
+      "value": "Post Categories"
+    },
+    {
+      "name": "tag",
+      "value": "positive"
+    },
+    {
+      "name": "tag",
+      "value": "smoke"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "integration"
+    },
+    {
+      "name": "tag",
+      "value": "JIRA-1005"
+    }
+  ],
+  "links": [],
+  "name": "Create a new category",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I have a valid token authorization",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685997076923,
+      "stop": 1685997077006
+    },
+    {
+      "name": "And  I have a valid Category Json body",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685997077006,
+      "stop": 1685997077007
+    },
+    {
+      "name": "When  I send a post request",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685997077007,
+      "stop": 1685997077090
+    },
+    {
+      "name": "Then  I expect a valid Post Http code response",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685997077090,
+      "stop": 1685997077091
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1685997076923,
+  "stop": 1685997077091
+}

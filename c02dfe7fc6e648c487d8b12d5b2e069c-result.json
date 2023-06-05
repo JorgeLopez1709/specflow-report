@@ -1,0 +1,81 @@
+{
+  "uuid": "d05e89be21c34e988c639472fd5ea94a",
+  "historyId": "Get Forbidden Http response",
+  "fullName": "Get Forbidden Http response",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "JORDI-PC"
+    },
+    {
+      "name": "feature",
+      "value": "GetToken"
+    }
+  ],
+  "links": [],
+  "name": "Get Forbidden Http response",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Object reference not set to an instance of an object.",
+    "trace": "System.NullReferenceException: Object reference not set to an instance of an object.\r\n   at TestProject3.GetTokenStepDefinitions.ThenIExpectAForbiddenHttpResponse() in C:\\Users\\jordy\\source\\practicamModulo3\\TestProject3\\GetTokenStepDefinitions.cs:line 60\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I have an invalid username and password",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685981832513,
+      "stop": 1685981832539
+    },
+    {
+      "name": "When  I send a POST request",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685981832540,
+      "stop": 1685981832916
+    },
+    {
+      "name": "Then  I expect an forbiden error response",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685981832916,
+      "stop": 1685981833011
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1685981832504,
+  "stop": 1685981833033
+}

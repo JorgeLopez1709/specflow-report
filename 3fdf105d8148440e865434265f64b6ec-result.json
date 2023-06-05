@@ -1,0 +1,101 @@
+{
+  "uuid": "3ab764743eb645d5b8a850d874c70198",
+  "historyId": "Get products",
+  "fullName": "Get products",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "JORDI-PC"
+    },
+    {
+      "name": "feature",
+      "value": "Get products"
+    },
+    {
+      "name": "tag",
+      "value": "positive"
+    },
+    {
+      "name": "tag",
+      "value": "smoke"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "integration"
+    },
+    {
+      "name": "tag",
+      "value": "JIRA-3333"
+    }
+  ],
+  "links": [],
+  "name": "Get products",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Error reading JObject from JsonReader. Current JsonReader item is not an object: StartArray. Path '', line 1, position 1.",
+    "trace": "Newtonsoft.Json.JsonReaderException: Error reading JObject from JsonReader. Current JsonReader item is not an object: StartArray. Path '', line 1, position 1.\r\n   at Newtonsoft.Json.Linq.JObject.Load(JsonReader reader, JsonLoadSettings settings)\r\n   at Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)\r\n   at Newtonsoft.Json.Linq.JObject.Parse(String json)\r\n   at TestProject3.GetProductsStepDefinitions.ThenIExpectedAValidCodeResponse() in C:\\Users\\jordy\\source\\practicamModulo3\\TestProject3\\GetProductsStepDefinitions.cs:line 42\r\n   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)\r\n   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I have the valid products endpoint",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685994112650,
+      "stop": 1685994112678
+    },
+    {
+      "name": "When  I send a get request",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685994112683,
+      "stop": 1685994113161
+    },
+    {
+      "name": "Then  I expect a valid Get Http code response",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685994113161,
+      "stop": 1685994113203
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1685994112641,
+  "stop": 1685994113211
+}

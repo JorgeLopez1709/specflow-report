@@ -1,0 +1,99 @@
+{
+  "uuid": "bae720621c4c40ff93cb680aadc0a1a0",
+  "historyId": "Get Auth Token",
+  "fullName": "Get Auth Token",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "fv-az163-465"
+    },
+    {
+      "name": "feature",
+      "value": "GetToken"
+    },
+    {
+      "name": "tag",
+      "value": "positive"
+    },
+    {
+      "name": "tag",
+      "value": "smoke"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "integration"
+    },
+    {
+      "name": "tag",
+      "value": "JIRA-1003"
+    }
+  ],
+  "links": [],
+  "name": "Get Auth Token",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I have a valid username and password",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685997076750,
+      "stop": 1685997076751
+    },
+    {
+      "name": "When  I send a POST request",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685997076751,
+      "stop": 1685997076832
+    },
+    {
+      "name": "Then  I expect a valid token response",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1685997076832,
+      "stop": 1685997076836
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1685997076750,
+  "stop": 1685997076836
+}
