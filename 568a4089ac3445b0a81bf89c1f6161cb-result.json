@@ -1,0 +1,99 @@
+{
+  "uuid": "1f567f30cb38440987219bd0a906ce66",
+  "historyId": "Get Forbidden Http response",
+  "fullName": "Get Forbidden Http response",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "fv-az414-302"
+    },
+    {
+      "name": "feature",
+      "value": "GetToken"
+    },
+    {
+      "name": "tag",
+      "value": "negative"
+    },
+    {
+      "name": "tag",
+      "value": "smoke"
+    },
+    {
+      "name": "tag",
+      "value": "regression"
+    },
+    {
+      "name": "tag",
+      "value": "integration"
+    },
+    {
+      "name": "tag",
+      "value": "JIRA-1004"
+    }
+  ],
+  "links": [],
+  "name": "Get Forbidden Http response",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  I have an invalid username and password",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686075847559,
+      "stop": 1686075847560
+    },
+    {
+      "name": "When  I send a POST request",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686075847560,
+      "stop": 1686075847716
+    },
+    {
+      "name": "Then  I expect an forbiden error response",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1686075847716,
+      "stop": 1686075847718
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1686075847559,
+  "stop": 1686075847718
+}
