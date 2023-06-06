@@ -39,9 +39,19 @@ namespace TestProject3.StepDefinitions
         public void ThenIExpectAValidPostHttpCodeResponse()
         {
             var result = response;
-            TestContext.WriteLine("Updated product, Body Response:\n ****************");
+            TestContext.WriteLine("Category Created, Body Response:\n ****************");
             TestContext.WriteLine(JToken.Parse(result.Content));
             Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
+        }
+
+        [Then(@"the response category name is the same as the sent category name")]
+        public void ThenTheResponseCategoryNameIsTheSameAsTheSentCategoryName()
+        {
+            string sentCategoryName = "Category created for testing Purposes using the POST method";
+            var result = response.Content;
+            var jsonResponse = JObject.Parse(result);
+            string responseCategoryName = jsonResponse["name"].ToString();
+            Assert.AreEqual(sentCategoryName, responseCategoryName, "The response category name is not the same as the sent category name");
         }
     }
 }

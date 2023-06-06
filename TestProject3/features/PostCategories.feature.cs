@@ -113,6 +113,9 @@ this.ScenarioInitialize(scenarioInfo);
 #line 12
  testRunner.Then("I expect a valid Post Http code response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
+#line 13
+ testRunner.And("the response category name is the same as the sent category name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
             }
             this.ScenarioCleanup();
         }

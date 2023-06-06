@@ -29,7 +29,7 @@ namespace TestProject3.StepDefinitions
     ""name"": ""Purple Glasses UPDATED for testing purposes"",
   ""description"": ""Purple Glasses"",
   ""image"": ""purple-glasses.jpg"",
-  ""price"": ""19.99"",
+  ""price"": ""199999.99"",
   ""categoryId"": 7
 }";
             request.AddJsonBody(jsonBody);
@@ -45,11 +45,23 @@ namespace TestProject3.StepDefinitions
         [Then(@"I expect a valid Put Http code response")]
         public void ThenIExpectedAValidCodeResponse()
         {
-            var result = response;
-            TestContext.WriteLine("Updated product, Body Response:\n ****************");
-            TestContext.WriteLine(JToken.Parse(result.Content));
+            var result = response;            
             Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
         }
+
+        [Then(@"I expect the details of the product were successfully updated")]
+        public void ThenIExpectProductDetailsUpdated()
+        {
+            string sentNewProductName = "Purple Glasses UPDATED for testing purposes";
+            string sentNewProductPrice = "199999.99";
+            var result = response.Content;
+            var jsonResponse = JObject.Parse(result);
+            string responseProductName = jsonResponse["name"].ToString();
+            string responseProductPrice = jsonResponse["price"].ToString();
+            Assert.AreEqual(sentNewProductName, responseProductName, "The updated Product name is not the same as the sent new Product name");
+            Assert.AreEqual(sentNewProductPrice, responseProductPrice, "The updated Product price is not the same as the sent new Product price");
+        }
+
 
 
     }

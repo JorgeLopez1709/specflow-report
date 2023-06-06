@@ -10,6 +10,7 @@ Scenario: Create a new category
 	And  I have a valid Category Json body
 	When I send a post request
 	Then I expect a valid Post Http code response
+	And the response category name is the same as the sent category name
 
 
 

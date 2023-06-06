@@ -10,6 +10,7 @@ Scenario: Put by id
 	And  I have a valid Json body
 	When I send a put request
 	Then I expect a valid Put Http code response
+	And I expect the details of the product were successfully updated
 
 
 

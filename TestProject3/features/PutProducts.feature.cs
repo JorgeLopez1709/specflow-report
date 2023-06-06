@@ -113,6 +113,9 @@ this.ScenarioInitialize(scenarioInfo);
 #line 12
  testRunner.Then("I expect a valid Put Http code response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
+#line 13
+ testRunner.And("I expect the details of the product were successfully updated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
             }
             this.ScenarioCleanup();
         }
